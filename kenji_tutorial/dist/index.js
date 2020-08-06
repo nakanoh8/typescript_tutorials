@@ -286,7 +286,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexport
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar uuid_1 = __importDefault(__webpack_require__(/*! uuid */ \"./node_modules/uuid/dist/esm-browser/index.js\"));\nvar User_1 = __webpack_require__(/*! ./User */ \"./ts/User.ts\");\nconsole.log(uuid_1.default);\nvar user = new User_1.User('ebihara', 'kenji', 44);\nvar contentsEle = document.getElementById('contents');\nif (!!contentsEle) {\n    contentsEle.innerText = user.familyName + \" \" + user.givenName;\n}\nvar saibanButton = document.getElementById('saiban');\nvar uuidSpan = document.getElementById('uuid');\nsaibanButton.onclick = function (e) {\n    // console.log(UUID);\n    uuidSpan.innerText = uuid_1.default.v4();\n};\n\n\n//# sourceURL=webpack:///./ts/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar uuid_1 = __webpack_require__(/*! uuid */ \"./node_modules/uuid/dist/esm-browser/index.js\");\nvar User_1 = __webpack_require__(/*! ./User */ \"./ts/User.ts\");\nconsole.log(uuid_1.v4);\nvar user = new User_1.User('ebihara', 'kenji', 44);\nvar contentsEle = document.getElementById('contents');\nif (!!contentsEle) {\n    contentsEle.innerText = user.familyName + \" \" + user.givenName;\n}\nvar saibanButton = document.getElementById('saiban');\nvar uuidSpan = document.getElementById('uuid');\nsaibanButton.onclick = function (e) {\n    uuidSpan.innerText = uuid_1.v4();\n};\n\n\n//# sourceURL=webpack:///./ts/index.ts?");
 
 /***/ })
 

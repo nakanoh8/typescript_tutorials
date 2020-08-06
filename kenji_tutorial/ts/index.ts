@@ -1,4 +1,4 @@
-import UUID from 'uuid';
+import {v4 as UUID} from 'uuid';
 
 import {User} from './User';
 
@@ -12,5 +12,5 @@ if(!!contentsEle){
 const saibanButton = document.getElementById('saiban') as HTMLButtonElement;
 const uuidSpan = document.getElementById('uuid') as HTMLSpanElement;
 saibanButton.onclick = (e) => {
-    uuidSpan.innerText = UUID.v4();
+    uuidSpan.innerText = UUID();
 }
